@@ -1,3 +1,5 @@
-# vercel.json
-
-This is a placeholder for vercel.json.
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
