@@ -1,4 +1,6 @@
-import { Hero, PortalEntry, MoonDraw } from "@/components/ui";
+import { Hero } from "./components/ui/Hero";
+import { PortalEntry } from "./components/ui/PortalEntry";
+import { MoonDraw } from "./components/ui/MoonDraw";
 
 export default function HomePage() {
   return (
