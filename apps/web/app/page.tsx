@@ -10,6 +10,7 @@ import { SoundControls, CosmicAmbience } from './components/ui/Sound';
 import { useAuth, UserProfile, AuthModal } from './components/ui/Auth';
 import { CosmicBanner } from './components/ui/CosmicBanner';
 import { CosmicFooter } from './components/ui/CosmicFooter';
+import { PremiumFeatures } from './components/ui/PremiumFeatures';
 
 export default function HomePage() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -22,6 +23,7 @@ export default function HomePage() {
     { id: 'astrology', label: 'Astrology', emoji: '✨' },
     { id: 'horoscope', label: 'Horoscope', emoji: '🌟' },
     { id: 'moon', label: 'Moon', emoji: '🌙' },
+    { id: 'premium', label: 'Premium', emoji: '👑' },
   ];
 
   const renderSection = () => {
@@ -41,6 +43,8 @@ export default function HomePage() {
         return <DailyHoroscope />;
       case 'moon':
         return <MoonDraw />;
+      case 'premium':
+        return <PremiumFeatures />;
       default:
         return null;
     }
