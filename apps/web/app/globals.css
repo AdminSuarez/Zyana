@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Zyana Global Styles */
+@layer base {
+  body {
+    @apply bg-black text-white font-cosmic;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .cosmic-gradient {
+    @apply bg-gradient-to-br from-cosmic-purple via-cosmic-black to-cosmic-gold;
+  }
+  
+  .cosmic-button {
+    @apply px-6 py-3 bg-cosmic-purple hover:bg-cosmic-gold text-white font-semibold rounded-lg transition-all duration-300;
+  }
+  
+  .cosmic-card {
+    @apply bg-gray-900 border border-gray-700 rounded-lg p-6 shadow-lg;
+  }
+}
